@@ -1,0 +1,221 @@
+@font-face{
+    font-family:'anurati' ;
+src: url(anuratif-font/Anurati-Regular.otf);
+}
+@font-face{
+    font-family:'ailerons' ;
+src: url(ailerons/Ailerons-Typeface.otf);
+}
+:root{
+    --bg: #1b1c1e;
+    --font1: #1b1c1e;
+}
+
+body {
+    background-color: var(--bg);
+    margin:0;   
+    overflow-x: hidden;
+}
+.header{
+    background-color: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    font-family: 'ailerons';
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    font-size: 2vw;
+    background-color: var(--bg);
+    z-index: 10;
+}
+.nav a{
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+    transition: all .5s;
+    border: 1px transparent solid;
+}
+.nav a:hover{
+    color: white;
+    border: 1px white solid;
+
+    
+}
+
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .title{
+    position: fixed;
+  }
+.phoenix::before{
+    font-family: 'anurati' ;
+    font-size: 12vw;
+    font-weight: bold;
+    content: 'PHOENIX';
+    background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow, 
+        red, 
+        orange, 
+        red, 
+        purple, 
+        white, 
+        orange, 
+        red, 
+        purple, 
+        transparent);
+    background-size: 300% 300%;
+    animation: gradient 15s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    
+}
+
+.subtitle::before{
+    font-family: 'anurati' ;
+    font-size: 7.2vw;
+    font-weight: bold;
+    content: 'PATCH FRANCE';
+    background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow, 
+        red, 
+        orange, 
+        red, 
+        purple, 
+        white, 
+        orange, 
+        red, 
+        purple, 
+        transparent);
+    background-size: 300% 300%;
+    animation: gradient 15s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--bg);
+    -webkit-text-stroke: 0.03em transparent;
+}
+  
+.contenu{
+    background-color:var(--bg);
+    width: 100vw;
+    height: 200vh;
+    color: white;
+}
+.disco{
+    position: sticky;
+    font-family: 'ailerons';
+    text-align: right;
+    height: 420vh;
+    padding: 50px;
+}
+
+h3 span{
+    color: transparent;
+    -webkit-text-stroke: .5px white;
+
+}
+.disco h3{
+    font-weight: normal;
+    font-size: 12vw;
+    position: sticky;
+    top:  -50vh;
+    
+}
+
+.img1, .img2, .img3, .img4{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 45vh;
+    color: white;
+    padding: 30px;
+    border-radius: 300px;
+    width: 300px;
+}
+.img1{
+    background-color: #848685;
+
+}
+.img2{
+    background-color: #c6c2a5;
+}
+.img3{
+    background-color: #080911;
+
+}
+.img4{
+    background-color: #a4a4a2;
+
+}
+h6{
+    text-align: left;
+    position: relative;
+    margin: 0;
+    font-size: 4em;
+    color: var(--bg);
+}
+
+.text  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    padding: 50px;
+    position: sticky;
+    font-family: 'ailerons';
+    text-align: left;
+    color: white;
+    width: 100vw;
+    height: 80vh;    
+}
+.social h3{
+    font-weight: normal;
+    font-size: 5em;
+}
+.logos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.logos a{
+    font-size: 8em;
+    color: gray;
+    text-decoration: none;
+    transition: all .5s;
+}
+.logos a:hover{
+    color: white;
+    scale: 1.1;
+}
+.logos p{
+    font-size: .3em;
+}
+
+

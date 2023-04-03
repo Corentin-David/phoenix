@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Patch</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="index.html"><div class="home">Home</div></a>
+            <a href="#"><div class="gallerie">Gallerie</div></a>
+            <a href="#"><div class="devis">Devis</div></a>
+            <a href="#"><div class="contact">Nous contacter</div></a>
+            
+        </div>
+        <div id="title" class="title">
+        <div d="phoenix" class="phoenix">
+            <div class="subtitle"></div>
+        </div>
+    </div>
+    </div>
+    <div class="contenu">
+        <div class="disco">
+            <h3>Découvrez nos dernières <span>créations</span></h3>
+            <div id="img1" class="img1"><img src="img/img1.png" width="300vw"></div>
+            <div id="img2" class="img2"><img src="img/img2.png" width="300vw"></div>
+            <div id="img3" class="img3"><img src="img/img3.png" width="300vw"></div>
+            <div id="img4" class="img4"><img src="img/img4.png" width="300vw"></div>
+        </div>
+        <div class="social">
+            <h3>Nos réseaux <span>sociaux</span></h3>
+            <div class="logos">
+            <a href="https://www.facebook.com/phoenixpatchresurrection"><div class="fb"><ion-icon name="logo-facebook"></ion-icon>
+            <p>Phoenix Patch Resurrection</p></div></a>
+            <a href="https://www.instagram.com/phoenix_patch_fr/"><div class="insta"><ion-icon name="logo-instagram"></ion-icon><p>phoenix_patch_fr
+            </p></div></a>
+        </div>
+        </div> 
+    </div>
+    
+    
+<script>
+   var container = document.getElementById('title');
+var windowHeight = window.innerHeight;
+var windowWidth = window.innerWidth;
+var scrollArea = 2000 - windowHeight;
+var title = document.getElementsByClassName('title')[0];
+
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = scrollTop/scrollArea || 0;
+  
+  title.style.left = 20 - scrollPercent*window.innerWidth* .3 + 'vw';
+
+});
+
+// var containerArray = [];
+// var imgArray = [];
+// var scrollArea = document.body.scrollHeight - window.innerHeight;
+
+// for (var i = 1; i <= 4; i++) {
+//   var container = document.getElementById('img' + i);
+//   var img = document.getElementsByClassName('img' + i)[0];
+//   containerArray.push(container);
+//   imgArray.push(img);
+// }
+
+// window.addEventListener('scroll', function() {
+//   if (window.innerWidth >= 1000) {
+//     var scrollTop = window.pageYOffset || window.scrollTop;
+//     var scrollPercent = scrollTop/scrollArea || 150;
+  
+//     for (var i = 0; i < imgArray.length; i++) {
+//       imgArray[i].style.right = 100 + (i * 30) - scrollPercent*window.innerWidth* 0.15 + 'vw';
+//     }
+//   }
+// });
+
+
+var container = document.getElementById('img1');
+var img1 = document.getElementsByClassName('img1')[0];
+
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = scrollTop/scrollArea || 100;
+  
+  img1.style.right =  310 - scrollPercent*window.innerWidth* 0.1 + 'vw';
+
+});
+
+var container = document.getElementById('img2');
+var img2 = document.getElementsByClassName('img2')[0];
+
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = scrollTop/scrollArea || 100;
+  
+  img2.style.right =  340 - scrollPercent*window.innerWidth* .1 + 'vw';
+
+});
+
+var container = document.getElementById('img3');
+var img3 = document.getElementsByClassName('img3')[0];
+
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = scrollTop/scrollArea || 100;
+  
+  img3.style.right =  370 - scrollPercent*window.innerWidth* .1 + 'vw';
+});
+
+var container = document.getElementById('img4');
+var img4 = document.getElementsByClassName('img4')[0];
+
+
+window.addEventListener('scroll', function() {
+  var scrollTop = window.pageYOffset || window.scrollTop;
+  var scrollPercent = scrollTop/scrollArea || 100;
+  
+  img4.style.right =  400 - scrollPercent*window.innerWidth* .1 + 'vw';
+
+});
+</script>
+
+<!-- _____________________ ICON _______________________ -->
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>
